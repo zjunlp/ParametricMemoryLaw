@@ -1,6 +1,35 @@
 # How LoRA Remembers? A Parametric Memory Law for LLM Finetuning
 
-This repository supports the paper "How LoRA Remembers? A Parametric Memory Law for LLM Finetuning". It studies capacity laws and training methods for exact parametric memory with LoRA. The code includes two benchmarks, Long-Context Memorization Stress Test and PhoneBook, and compares three methods: SFT, MemFT-OT, and MemFT-SW.
+<p align="center">
+  <a href="https://arxiv.org/abs/2605.30260">
+    <img src="https://img.shields.io/badge/arXiv-Paper-red" alt="arXiv">
+  </a>
+  <a href="https://github.com/zjunlp/ParametricMemoryLaw/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+  </a>
+  <img src="https://img.shields.io/badge/PRs-Welcome-red" alt="PRs Welcome">
+</p>
+
+> **In one sentence:** This paper uses LoRA as a controllable capacity probe to quantify *exact* parametric memory in LLMs, uncovering a power-law **Parametric Memory Law**, a **deterministic phase transition** at token probability `p = 0.5`, and a threshold-guided fine-tuning method **MemFT** that beats standard SFT in both fidelity and parameter efficiency.
+
+
+<p align="center">
+  <img src="figures/motivation.png" alt="Overview" width="90%">
+</p>
+
+## Overview
+
+LLMs store knowledge in frozen parameters, yet the real world keeps changing. Writing new information *exactly* into model weights under a strict parameter budget is an open problem. We treat LoRA as a memory probe in the latent space and make three layered contributions:
+
+- **Parametric Memory Law.** A robust power law `ΔL = C · r^α · ℓ^(-β) + b` links the loss reduction `ΔL` to LoRA rank `r` (capacity) and sequence length `ℓ`, holding across models, datasets, and semantic densities (R² > 0.98).
+- **Deterministic Phase Transition.** Average loss hides token-level competition: a few *stubborn tokens* trigger cascading decoding collapse. Under greedy decoding, target probability `p > 0.5` (i.e. loss < `ln 2 ≈ 0.693`) is a *sufficient* condition for verbatim recall, giving a clean ordered/disordered phase boundary.
+- **MemFT.** A memory-oriented fine-tuning method that redistributes the gradient budget from already-memorized tokens to sub-threshold ones. Two variants — `MemFT-OT` (threshold-only) and `MemFT-SW` (sliding-window / curriculum) — outperform standard LoRA SFT and even improve generalization.
+
+This repository provides the code for the two benchmarks and three methods used in the paper.
+
+<p align="center">
+  <img src="figures/main_fig.png" alt="Overview" width="90%">
+</p>
 
 ## Benchmarks
 
