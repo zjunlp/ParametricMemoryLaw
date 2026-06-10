@@ -1,4 +1,4 @@
-# How LoRA Remembers?
+# How LoRA Remembers? A Parametric Memory Law for LLM Finetuning
 
 This repository supports the paper "How LoRA Remembers? A Parametric Memory Law for LLM Finetuning". It studies capacity laws and training methods for exact parametric memory with LoRA. The code includes two benchmarks, Long-Context Memorization Stress Test and PhoneBook, and compares three methods: SFT, MemFT-OT, and MemFT-SW.
 
