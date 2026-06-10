@@ -14,7 +14,7 @@
 
 
 <p align="center">
-  <img src="figures/motivation.png" alt="Overview" width="90%">
+  <img src="figures/motivation.png" alt="Overview" width="80%">
 </p>
 
 ## Overview
@@ -28,7 +28,7 @@ LLMs store knowledge in frozen parameters, yet the real world keeps changing. Wr
 This repository provides the code for the two benchmarks and three methods used in the paper.
 
 <p align="center">
-  <img src="figures/main_fig.png" alt="Overview" width="90%">
+  <img src="figures/main_fig.png" alt="Overview" width="100%">
 </p>
 
 ## Benchmarks
