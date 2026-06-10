@@ -21,7 +21,7 @@
 
 LLMs store knowledge in frozen parameters, yet the real world keeps changing. Writing new information *exactly* into model weights under a strict parameter budget is an open problem. We treat LoRA as a memory probe in the latent space and make three layered contributions:
 
-- **Parametric Memory Law.** A robust power law `ΔL = C · r^α · ℓ^(-β) + b` links the loss reduction `ΔL` to LoRA rank `r` (capacity) and sequence length `ℓ`, holding across models, datasets, and semantic densities (R² > 0.98).
+- **Parametric Memory Law.** A robust power law $$\Delta\mathcal{L} = C \cdot r^{\alpha} \cdot \ell^{-\beta} + b$$ links the loss reduction `ΔL` to LoRA rank `r` (capacity) and sequence length `ℓ`, holding across models, datasets, and semantic densities (R² > 0.98).
 - **Deterministic Phase Transition.** Average loss hides token-level competition: a few *stubborn tokens* trigger cascading decoding collapse. Under greedy decoding, target probability `p > 0.5` (i.e. loss < `ln 2 ≈ 0.693`) is a *sufficient* condition for verbatim recall, giving a clean ordered/disordered phase boundary.
 - **MemFT.** A memory-oriented fine-tuning method that redistributes the gradient budget from already-memorized tokens to sub-threshold ones. Two variants — `MemFT-OT` (threshold-only) and `MemFT-SW` (sliding-window / curriculum) — outperform standard LoRA SFT and even improve generalization.
 
