@@ -1,0 +1,5 @@
+alg_name: memft
+layers: [24]
+multipliers: [1.0]
+concept_id: 0
+intervention_method: lora

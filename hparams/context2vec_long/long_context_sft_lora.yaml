@@ -1,0 +1,35 @@
+alg_name: sft
+layers: [24]
+use_cache: false
+
+exclude_bos: true
+max_concepts: 1
+max_num_of_examples: null
+preference_pairs: ["orig_add"]
+output_length: 512
+
+batch_size: 1
+dropout: 0.1
+gradient_accumulation_steps: 1
+lr: 0.01
+n_epochs: 2000
+
+weight_decay: 0.0
+pos_loss_weight: 1.0
+neg_loss_weight: 0.0
+margin_penalty_weight: 0.0
+ref_loss_weight: 0.0
+margin_threshold: 0.0
+loss_output_dir: null
+inference: false
+
+intervention_positions: "all"
+intervention_positions_dropout: 0.0
+intervention_type: "addition"
+low_rank_dimension: 2
+intervention_method: "lora"
+intervention_components: "mlp"
+
+steering_factors: [1.0]
+steering_prompt_type: "blend_in"
+substraction_type: "normal"

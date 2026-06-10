@@ -1,0 +1,26 @@
+defaults:
+  - _self_
+  - model: qwen3_8b
+
+model_name_or_path: ${model.model_name_or_path}
+torch_dtype: ${model.torch_dtype}
+device: ${model.device}
+seed: 42
+use_chat_template: true
+system_prompt: ""
+dataset_config_path: easyedit_PB/hparams/dataset_format_pb.yaml
+
+steer_train_hparam_paths:
+  - easyedit_PB/hparams/context2vec_pb/pb_sft_lora.yaml
+steer_train_dataset:
+  - phonebook_smoke
+save_vectors: true
+steer_vector_output_dirs:
+  - easyedit_PB/output/vectors/${model.model_id}/default
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false

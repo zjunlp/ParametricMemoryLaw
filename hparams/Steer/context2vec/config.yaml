@@ -1,0 +1,43 @@
+# General 
+model_name_or_path: ${oc.env:QWEN3_8B_MODEL,/disk0/qzs/PLMs/qwen3-8b}
+torch_dtype: bfloat16
+device: cuda:0
+seed: 42
+use_chat_template: true
+system_prompt: ''
+
+# Generate Vector 
+steer_train_hparam_paths:
+ - hparams/context2vec_pb/pb_sft_lora.yaml
+steer_train_dataset: 
+  - pb_random_qwen_1000
+save_vectors: true
+steer_vector_output_dirs: 
+ - output/vectors/qwen3-8b-smoke
+
+# Apply Vector 
+# The `apply_steer_hparam_paths` and `steer_vector_load_dir` are corresponding line by line.
+apply_steer_hparam_paths:
+ - hparams/Steer/context2vec/our_lora/apply_our_lora.yaml
+steer_vector_load_dir: 
+ - vectors/qwen2.5-7b-it/toxicity/caa_vector
+
+# Generation
+# Supported multiple files generation based on `generation_data`.
+# You can choose dataset here, e.g., `- realtoxicityprompts`. 
+# Details of the dataset can be found in `hparams/Steer/dataset_format.yaml`.
+generation_data: 
+ - realtoxicityprompts 
+generation_data_size: null  # If set to null, it will use the full dataset.
+generation_output_dir: generation/qwen2.5-7b-it/realtoxicityprompts/caa
+num_responses: 1
+steer_from_end_position: false
+
+generate_orig_output: false
+# Model generation parameters - must match Hugging Face parameter names
+# See: https://huggingface.co/docs/transformers/main_classes/text_generation
+generation_params:
+  max_new_tokens: 25   
+  temperature: 0.9     
+  do_sample: true  
+

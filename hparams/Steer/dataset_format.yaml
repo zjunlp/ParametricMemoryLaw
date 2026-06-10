@@ -1,0 +1,425 @@
+# ================train datasets===========================
+train:
+  long_context_r0:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_0.jsonl
+    field_names:
+      question: 'question'
+      matching: 'matching'
+      not_matching: 'not_matching'
+
+  long_context_r20:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_20.jsonl
+    field_names:
+      question: 'question'
+      matching: 'matching'
+      not_matching: 'not_matching'
+
+  long_context_r40:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_40.jsonl
+    field_names:
+      question: 'question'
+      matching: 'matching'
+      not_matching: 'not_matching'
+
+  long_context_r60:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_60.jsonl
+    field_names:
+      question: 'question'
+      matching: 'matching'
+      not_matching: 'not_matching'
+
+  long_context_r80:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_80.jsonl
+    field_names:
+      question: 'question'
+      matching: 'matching'
+      not_matching: 'not_matching'
+
+  long_context_r100:
+    file_path: ./datasets/long_context/random.jsonl
+    field_names:
+      question: 'question'
+      matching: 'matching'
+      not_matching: 'not_matching'
+
+  pb_random_qwen_1000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB1000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_2000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB2000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_4000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB4000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_8000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB8000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_12000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB12000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_16000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB16000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_24000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB24000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_32000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB32000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_48000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB48000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_qwen_64000:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB64000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_1000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB1000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_2000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB2000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_4000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB4000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_8000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB8000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_12000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB12000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_16000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB16000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_24000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB24000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_32000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB32000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  pb_random_llama_64000:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB64000.jsonl
+    field_names:
+      id: 'id'
+      query: 'query'
+      target: 'target'
+      target_len: 'target_len'
+      question: 'query'
+      matching: 'target'
+      not_matching: ''
+
+  merge:
+    file_path: null
+
+# ================generation datasets===========================
+generation:
+  long_context_r0:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_0.jsonl
+    field_names:
+      input: 'question'
+      reference_response: 'matching'
+
+  long_context_r20:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_20.jsonl
+    field_names:
+      input: 'question'
+      reference_response: 'matching'
+
+  long_context_r40:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_40.jsonl
+    field_names:
+      input: 'question'
+      reference_response: 'matching'
+
+  long_context_r60:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_60.jsonl
+    field_names:
+      input: 'question'
+      reference_response: 'matching'
+
+  long_context_r80:
+    file_path: ./datasets/long_context/sample_0_tok29709_noise_80.jsonl
+    field_names:
+      input: 'question'
+      reference_response: 'matching'
+
+  long_context_r100:
+    file_path: ./datasets/long_context/random.jsonl
+    field_names:
+      input: 'question'
+      reference_response: 'matching'
+
+  pb_random_qwen_1000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB1000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_2000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB2000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_4000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB4000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_8000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB8000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_12000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB12000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_16000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB16000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_24000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB24000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_32000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB32000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_48000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB48000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_64000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB64000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_qwen_128000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/qwen/PB128000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_1000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB1000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_2000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB2000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_4000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB4000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_8000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB8000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_12000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB12000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_16000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB16000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_24000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB24000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_32000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB32000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_48000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB48000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_64000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB64000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'
+
+  pb_random_llama_128000_apply:
+    file_path: ./datasets/phonebook/pb_train_random/llama/PB128000.jsonl
+    field_names:
+      input: 'query'
+      reference_response: 'target'

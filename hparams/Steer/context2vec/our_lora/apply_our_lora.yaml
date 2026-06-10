@@ -1,0 +1,4 @@
+alg_name: sft
+layers: [20] 
+multipliers: [1.0] 
+concept_id: 0
